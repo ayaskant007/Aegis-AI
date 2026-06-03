@@ -202,5 +202,25 @@ class SystemCommander:
                 return f"System Health: CPU @ {cpu}%, RAM @ {mem}%. Your system is stable."
 
             def _open_vault(self):
-                folder            
+                folder = os.path.join(os.path.expanduser("~")), "Aegis_Security_Vault")
+                if not os.path.exists(folder):
+                    os.makedirs(folder)
+                    guides = {
+                        "Strong_Passwords.txt": "Aegis AI SECURITY GUIDE: STRONG PASSWORDS\n\n"
+                        "1. Length Matters: Aim for 12+ characters.\n"
+                        "2. Mix it up: Use uppercase, lowercase, numbers, and symbols.\n"
+                        "3. Avoid dictionary words or personal info (names, birthdays). \n"
+                        "4. Use a password manager to keep track of unique passwords.\n"
+                        "5. Enable Two-Factor Authentication (2FA) wherever possible.",
+                        
+                        "Reporting_Cyberbullying.txt": "Aegis AI SECURITY GUIDE: REPORTING CYBERBULLYING\n\n"
+                        "1. DO NOT RESPOND: Bullies want a reaction. Don't give it to them.\n"
+                        "2. SAVE THE EVIDENCE: Take screenshots of messages, posts, or comments. \n"
+                        "3. BLOCK AND REPORT: Use the platform's tools to block the user and report the behavior.\n"
+                        "4. TELL A TRUSTED ADULT: Reach out to a parent, teacher, or counselor for support."
+                        "5. SEEK HELP: If you feel overwhelmed, contact a helpline or counselor.",
+
+                        "Safe_Social_Media.txt": "Aegis AI SECURITY GUIDE: SAFE SOCIAL MEDIA\n\n"
+                        "1. Check your privacy settings: Ensure your accounts are set to \"Private\"
+                    }          
         
